@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr  6 15:15:28 2021
 
-@author: deepak
-"""
 import streamlit as st 
 from PIL import Image
 import pickle
@@ -34,9 +29,8 @@ def main():
    <div class="" style="background-color:blue;" >
    <div class="clearfix">           
    <div class="col-md-12">
-   <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
-   <center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
-   <center><p style="font-size:25px;color:white;margin-top:10px;">Deep Lab Experiment Deployment</p></center> 
+   <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Group Of Institutions</p></center> 
+   <center><p style="font-size:30px;color:white;margin-top:10px;">Department of AI & DS</p></center>
    </div>
    </div>
    </div>
@@ -51,8 +45,8 @@ def main():
       result=predict_note_authentication(UserID, Gender,Age,EstimatedSalary)
       st.success('Model has predicted {}'.format(result))
     if st.button("About"):
-      st.text("Developed by Deepak Moud")
-      st.text("Head , Department of Computer Engineering")
+      st.text("Developed by Sharad Kumar Agarwal")
+      st.text("Student , Department of AI & DS")
 
 if __name__=='__main__':
   main()
