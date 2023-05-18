@@ -36,7 +36,6 @@ def main():
    </div>
    """
     st.markdown(html_temp,unsafe_allow_html=True)
-    UserID = st.text_input("UserID","Type Here")
     Gender = st.text_input("Gender","Type Here")
     Age = st.text_input("Age","Type Here")
     EstimatedSalary = st.text_input("EstimatedSalary","Type Here")
