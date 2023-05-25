@@ -14,7 +14,7 @@ X = dataset.iloc[:, [2, 3]].values
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X = sc.fit_transform(X)
-def predict_note_authentication(UserID, Gender,Age,EstimatedSalary):
+def predict_note_authentication(Gender,Age,EstimatedSalary):
   output= model.predict(sc.transform([[Age,EstimatedSalary]]))
   print("Purchased", output)
   if output==[1]:
@@ -41,7 +41,7 @@ def main():
     EstimatedSalary = st.text_input("EstimatedSalary","Type Here")
     result=""
     if st.button("Predict"):
-      result=predict_note_authentication(UserID, Gender,Age,EstimatedSalary)
+      result=predict_note_authentication(Gender,Age,EstimatedSalary)
       st.success('Model has predicted {}'.format(result))
     if st.button("About"):
       st.text("Developed by Sharad Kumar Agarwal")
